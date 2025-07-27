@@ -1,3 +1,20 @@
+/* Badge discreta IA */
+.ia-badge {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 0.65rem;
+  background: var(--color-primary-dark);
+  color: var(--color-text);
+  border-radius: 10px;
+  padding: 1px 7px;
+  opacity: 0.7;
+  letter-spacing: 0.03em;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+  font-family: "JetBrains Mono", monospace;
+}
 :root {
   --color-primary: #5a8ef5;
   --color-primary-light: #a2cafd;
