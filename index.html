@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="canvas">
+            <div id="element1" title="Elemento 1"></div>
+        </div>
+        <div id="controls">
+            <div class="property-controls">
+                <div id="border-radius-controls">
+                    <div id="value-display"><span id="value">50</span><span id="unit">px</span></div>
+                    <input type="range" id="border-radius-value" min="0" max="100" value="50">
+                    <input type="radio" name="unit" id="unit-px" checked>
+                    <label for="unit-px">px</label>
+                    <input type="radio" name="unit" id="unit-percent">
+                    <label for="unit-percent">%</label>
+                </div>
+                <div id="size-controls">
+                    <div id="width-controls">
+                        <label for="width-value">Largura:</label>
+                        <input type="number" id="width-value" value="200" min="0">
+                        <span id="width-unit">px</span>
+                    </div>
+                    <div id="height-controls">
+                        <label for="height-value">Altura:</label>
+                        <input type="number" id="height-value" value="200" min="0">
+                        <span id="height-unit">px</span>
+                    </div>
+                </div>
+                <div id="position-controls">
+                    <div id="anchor-points">
+                        <input type="radio" name="anchor" id="anchor-top-left">
+                        <input type="radio" name="anchor" id="anchor-top-center">
+                        <input type="radio" name="anchor" id="anchor-top-right">
+                        <input type="radio" name="anchor" id="anchor-middle-left">
+                        <input type="radio" name="anchor" id="anchor-middle-center" checked>
+                        <input type="radio" name="anchor" id="anchor-middle-right">
+                        <input type="radio" name="anchor" id="anchor-bottom-left">
+                        <input type="radio" name="anchor" id="anchor-bottom-center">
+                        <input type="radio" name="anchor" id="anchor-bottom-right">
+                    </div>
+                    <div id="position-sliders">
+                        <label for="pos-x">X:</label>
+                        <div id="x-wrapper">
+                            <input type="range" id="pos-x" min="-200" max="200" value="0" step="1">
+                            <br>
+                            <input type="number" id="pos-x-num" min="-200" max="200" value="0" step="1">
+                        </div>
+                        <label for="pos-y">Y:</label>
+                        <div id="y-wrapper">
+                            <input type="range" id="pos-y" min="-200" max="200" value="0" step="1">
+                            <br>
+                            <input type="number" id="pos-y-num" min="-200" max="200" value="0" step="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="color-controls">
+                    <div id="color-picker-wrapper">
+                        <input type="color" id="color-picker" value="#5a81f5" title="Escolha uma cor">
+                    </div>
+                    <label for="color-picker">Cor</label>
+                </div>
+            </div>
+        </div>
+        <div id="properties">
+            <button id="btn1" data-control="border-radius-controls">Raio da Borda</button>
+            <button id="btn2" data-control="size-controls">Tamanho</button>
+            <button id="btn3" data-control="position-controls">Posição</button>
+            <button id="btn4" data-control="color-controls">Cor</button>
+        </div>
+    </main>
+    <footer>
+        <a href="https://linktr.ee/derico_dev" target="_blank" rel="noopener noreferrer" id="footer-link">derico_dev</a>
+        <div id="minicard-link">
+            <a href="https://linktr.ee/derico_dev" target="_blank" rel="noopener noreferrer">
+                <span>@derico_dev</span>
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
